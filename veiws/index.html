@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jstanbrl</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body onload="dataget()">
+  <section class="main-section">
+    <form action="">
+      <div class="main-section-inner">
+        <div class="left-area-div">
+          <div class="select-area">
+            <label class="select" for="slct">
+              <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">Select option</option> <br>
+
+                <!-- <option value="#">Two</option>
+                <option value="#">Three</option>
+                <option value="#">Four</option>
+                <option value="#">Five</option>
+                <option value="#">Six</option>
+                <option value="#">Seven</option> -->
+              </select>
+              <svg>
+                <use xlink:href="#select-arrow-down"></use>
+              </svg>
+            </label>
+            <!-- SVG Sprites-->
+            <svg class="sprites">
+              <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+          <div class="textarea-div">
+            <!-- <textarea placeholder="Your Data will be displayed here."></textarea> -->
+            <div  id="datashow"  class="textarea">
+
+  
+            </div>
+
+          </div>
+        </div>
+        <div class="Center-area-div">
+          <button id="submit" class="submitt">Submit</button>
+        </div>
+
+        <div class="Right-area-div">
+          <div class="select-area">
+            <label class="select" for="slct">
+              <select id="slct2" required="required">
+                <option value="" disabled="disabled" selected="selected">Select option</option>
+
+
+              </select>
+              <svg>
+                <use xlink:href="#select-arrow-down"></use>
+              </svg>
+            </label>
+            <!-- SVG Sprites-->
+            <svg class="sprites">
+              <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+          <div  class="textarea-div">
+            <div class="textarea " style="background-color: transparent; box-shadow: none;"></div>
+
+            
+            <!-- <div class="textarea">
+              <p>
+                <h5>RowKey:</h5> <span> 7d027664-fe09-11ec-a79c-17a782296c97</span></p>
+                <p>
+                <h5>date:</h5> <span> 31/05/2022</span></p>
+                <p>
+                <h5>advertiser_currency:</h5><span> GBP</span></p>
+                <p>
+                <h5>client_line_item:</h5><span> ASIA_Psychology & Neuroscience of Mental
+                Health_KCL_Display_Prospecting_Multilocal_Psychology & Neuroscience</span></p>
+                <p>
+                <h5>creative_size:</h5> <span> 160x600</span></p>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </section>
+
+</body>
+<script src="./js/app.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+  integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
